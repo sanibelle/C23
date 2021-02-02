@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p>Sub classe!</p>
+        <a href="index.html">Retour à l'accueil</a>
+        <h1>Mon botin de recette</h1>
+        <!-- Un tableau -->
+        <!-- On met la rangé plus la colonne (donnée), répété -->
+        <table border="1">
+            <!-- thead c'est la rangé header... comme un genre de h1 pour tableau -->
+            <thead>
+                <!-- colspan = 2 permet d'étendre le td sur deux colonnes -->
+                <!-- th, c'est un genre de h1 pour la cellulle -->
+                <th colspan="2">MES RECETTES</th>
+            </thead>
+            <!-- On met les rangés -->
+            <tr>
+                <!-- on met la cellule data, td -->
+                <td>Nom de la recette</td>
+                <td>Le lien vers la recette</td>
+            </tr>
+            <tr>
+                <td>
+                    toast
+                </td>
+                <td>
+                    <a href="toast.php">ma recette</a>
+                </td>
+            </tr>
+            <!-- On étend la rangé sur deux cellules -->
+            <tr>
+                <!-- Prend deux rangés -->
+                <td rowspan="2">Verre d'eau</td>
+                <td><a href="#">Eau tiède</a></td>
+            </tr>
+            <tr>
+                <!-- Un seul td ici car on a predu une rangé avec le rowspan plus haut -->
+                <td><a href="#">Eau presque chaude</a></td>
+                <td>Si on ajoute un td de trop</td>
+            </tr>
+        </table>
+        <!-- Pour ajouter une image -->
+        <!-- la valeur de l'attribut src est le chemin vers l'image -->
+        <!-- alt c'est le texte qu'on va écrire pour les gens aveugles -->
+        <img src="img/prof.png" alt="image du prof">
+        <aside>
+            
+        </aside>
+        <article>
+
+        </article>
+        <section>
+            
+        </section>
+    </main>
+
+</body>
+</html>
