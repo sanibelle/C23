@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        /* Calculs hauteur totale
+        #div1
+            margin-top 0
+            border-top 0
+            padding-top 15 +
+            content (height) 300+
+            padding-bottom 0
+            border-bottom 0
+            margin-bottom 20px
+            total : 335px
+        #div2
+            300+
+            30+
+            total : 330px
+        #div3 
+            on ignore le 15px, il overlap le margin bottom de div 2
+            300px +
+            15px
+            total : 315px
+
+        #grand total : 335+330+315 = 980px
+        */
+    </style>
+</head>
+<body>
+    <div style="background-color: red;
+            padding-top:15px">
+        div1
+    </div>
+    <div style="background-color: green;
+            margin-bottom: 30px;">
+        div2
+    </div>
+    <div style="background-color: blue;
+            margin:15px">
+        div3
+    </div>
+</body>
+</html>

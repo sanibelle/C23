@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Vive les usines</title>
+		<meta charset="utf-8" />
+		<style>
+			
+			/*CSS C'est pour cascade style sheet.
+			En gros, c'est parce que le style coule
+			vers les balises enfant
+			La CSS prend une balise ou un selecteur
+			Et on lui attribut des attributs
+			balise {
+				attribut : valeur;
+			}
+			*/
+			/****************************************************/
+			/****************Les styles changements de couleur***/
+			/****************************************************/
+
+			/* La virgule est importante! Ici on met le texte rose aux balises
+			h3 ET a ET p ET table */
+			h3, p, table, a {
+				/*Change la couleur du texte*/
+				color: gray;
+			}
+
+			body {
+				/* On garde les background colors mais, il faut pas faire ça. Un seul suffit*/
+				/*On peut l'écrire en hexadecimal*/
+				background-color: #00FF00;
+
+				/*On peut l'écrire en hexadecimal abbrégé*/
+				/* On combine les paires de valeurs binaires identiques pour en faire qu'une*/
+				/*00 => 0*/
+				background-color: #0F0;
+
+				/*On peut choisir sa couleur avec un mot*/
+				background-color: green;
+
+				/*On peut choisir sa couleur avec le code RGB*/
+				background-color: rgba(0,255,0, 0.5);
+
+				/*******************************************************************/
+				/*Comment centrer sa page web : deux façons*/
+				/*Avec margin auto, la largeur reste fixe à 900px*/
+				width: 900px;
+				margin: auto;
+				/*Avec des %, la largeur s'adapte à la largeur réelle du fureteur ou de l'écran*/
+				width: 50%;
+				margin-left: 25%;
+				margin-right: 25%;
+				/*******************************************************************/
+			}
+
+
+			/***********************************************************/
+			/***************** Style de plaçage d'affaires *************/
+			/***********************************************************/
+
+			h1 {
+				/*la largeur du contenu de la balise*/
+				width: 200px;
+				/*la hauteur du contenu de la balise*/
+				height: 200px;
+			}
+
+			section {
+				background-color: antiquewhite;
+				/*Ajoute une balise à la bordure*/
+				border:
+				10px /*La largeur de la bordure*/
+				solid /*le type de bordure*/
+				#000; /*La couleur*/
+
+				padding: 20px;
+
+				margin: 20px;
+			}
+
+			/*L'étoile ça veut dire TUTE!
+			Comme Oprah, tout le monde a eu un margin 0*/
+			* {
+				/*Le fureteur web, donne une valeur aux marges aux éléments par défaut*/
+				padding: 0;
+				margin: 0;
+			}
+
+			/***********************************************************/
+			/***************** Style de mise en forme du texte *********/
+			/***********************************************************/
+
+			h3 {
+				/*Met le texte en italique*/
+				font-style: italic;
+				/*Met le texte en gras*/
+				font-weight: bold;
+				/*Ajoute une barre en haut et en bas*/
+				text-decoration: underline overline;
+			}
+
+			/***********************************************************/
+			/***************** Style d'embellissement ******************/
+			/***********************************************************/
+			
+			/*On retrouve deux fois la balise section dans la CSS
+			Normalement, on met TOUT notre code dedans*/
+			section {
+				/*Ajoute de l'ombre au div*/
+				box-shadow: 
+				-10px /*décalage de l'ombre horizontale. Quand c'est négatif, on va vers la gauche, positif, vers la droite*/
+				10px /*décalage de l'ombre verticale. Quand c'est négatif, on va vers le haut, positif, vers le bas*/
+				20px /*La largeur de l'ombre*/
+				#f0f;
+				/*Ajoute de l'ombre au enfants de section, au texte */
+				/* Les valeurs en px suivent la logique de box-shadow*/
+				text-shadow: -1px 1px 1px #000;
+
+				/*Vient arrondir le coin de la bordure.
+				Peut servir même si on a pas de bordure*/
+				border-radius: 10px;
+			}
+
+
+			/*avec la bordre, on peut faire comme border="1" dans la balise table*/
+			table, th, td, tr {
+				border: solid 1px black;
+			}
+
+			/*Idéalement,  on ne se sert pas de la balise html pour faire 
+			des styles, mais ce n'est pas défendu*/
+			html {
+				background-image: url("img/dead-plant.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+		</style>
+    </head>
+    <body>
+		<header>
+			<h1>
+				Longue vie aux usines polluantes!
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="top5.html">Top 5</a></li>
+					<li><a href="contact.html">Contactez-nous</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Where would you be without us ?</h2>
+
+			<section>
+				<h3>We are good for the environment</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+					Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+				</p>
+			</section>
+			
+			<section>
+				<h3>We are powerful</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+					Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+				</p>
+			</section>
+			
+			<section>
+				<h3>Interesting facts</h3>
+				<ul>
+					<li>Fact #1</li>
+					<li>Fact #2</li>
+					<li>Fact #3</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3>Just compare the following</h3>
+				<table>
+					<tr>
+						<th colspan="2">
+							Industry
+						</th>
+					</tr>
+					<tr>
+						<th>
+							Without
+						</th>
+						<th>
+							Width
+						</th>
+					</tr>
+					<tr>
+						<td>
+							...
+						</td>
+						<td>
+							Argument #1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							...
+						</td>
+						<td>
+							Argument #2
+						</td>
+					</tr>
+				</table>
+			</section>
+		</main>
+		<img src="img/pollution.jpg" alt="La pollution qui rend service à l'environnement">
+    </body>
+</html> 

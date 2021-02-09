@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+        }
+
+        /*
+        Voici l'ordre :
+        margin
+        border
+        padding
+        contenu
+        padding
+        border
+        margin
+
+
+        MARGIN : 
+        Ne contient pas la background-color du contenu
+        Le margin embarque un par dessus l'autre:
+        Donc, un margin bottom du premier div de 10px 
+        et un margin top du deuxième div de 5 px fait un espace de
+        10 px entre les deux divs
+
+        Peut prendre une valeur négative, mais on préfère régler le problème autrement
+        */
+    </style>
+</head>
+<body>
+    <div style="background-color:brown; margin-bottom: 10px;">
+        div1
+    </div>
+    <div style="background-color: green; margin-top: 5px;">
+        div2
+    </div>
+</body>
+</html>
