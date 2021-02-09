@@ -3,132 +3,6 @@
     <head>
         <title>Vive les usines</title>
         <meta charset="utf-8" />
-		<style>
-			/*CSS C'est pour cascade style sheet.
-			En gros, c'est parce que le style coule
-			vers les balises enfant*/
-			/* Lac CSS prend une balise ou un selecteur
-				Et on lui attribut des attributs
-				balise {
-					attribut : valeur;
-				}
-			*/
-			/***********************************************************/
-			/**************** Style de changement de couleur ***********/
-			/***********************************************************/
-			/* Pour affecter un style à une liste de balise, on fait :*/
-			/* La virgule est importante! Ici on met le texte rose aux balises*/
-			/* h3 ET a ET li ET table */
-			h3, a, li, table {
-				/* color c'est pour changer la couleur du texte*/
-				color:pink;
-			}
-
-			body {
-				/* Pour changer la couleur de fond*/
-				/*Après le #, on met la valeur RGB en hexa*/
-				background-color: #0F0;
-				/*On peut aussi améliorer la précision en utilsant 48 bits*/
-				background-color: #00FF00;
-				/*Ou utiliser le bon vieux rgb avec des chiffres*/
-				background-color: rgb(0, 255, 0);
-				/*Ou écrire lâchement le nom de la couleur*/
-				background-color: transparent;
-
-				/***********************************************************************************/
-				/* Pour centre la page web*/
-				/*Première façon avec les %*/
-				width: 50%;
-				margin-right: 25%;
-				margin-left: 25%;
-
-				/*Deuxième façon pour centre sa page*/
-				width: 900px;
-				margin: auto;
-				/***********************************************************************************/
-			}
-
-			/************************************************************/
-			/********************** Style sur le texte ******************/
-			/***********************************************************/
-			
-			h2 {
-				text-decoration: underline overline;
-				font-weight: bold;
-				font-style: italic;
-				/* En HTML, on l'aurait fait comme ça...... Plus lourd un peu*/
-				/* <h2> <b><i><u>Where would you be without us ?</u></i></b> </h2> */
-				
-			}
-
-			/***********************************************************/
-			/********************** Style d'embellissement *************/
-			/***********************************************************/
-
-			section {
-				box-shadow: 
-				-10px /* déplacement de l'ombre à l'horizontal. en négatif, va vers la gauche, positif vers la droite*/
-				-10px /* déplacement de l'ombre à la verticale. En négatif, va vers le haut, positif vers le bas*/
-				20px /*Étendue du flou*/
-				#f0f;
-				
-				/*les valeurs en pixels suivent la même logique que plus haut*/
-				text-shadow: 0px 0px 3px #fff;
-				
-				/*Vient arrondir les bords de ma balise*/
-				border-radius: 10px;
-			}
-			
-			table, tr, td, th {
-				border: 1px solid black;
-			}
-		
-			/*Idéalement, on n'applique pas de style sur la balise html, mais on peut le faire*/
-			html {
-				background-image: url("img/dead-plant.jpg");
-				background-repeat: no-repeat;
-				background-size: cover;
-
-				/* On se sert de la balise img dans la page html pour ajouter des images qui
-				apportent un sens à notre page. EX : Une image pour un article de journal OU
-				Une image d'écran 2k sur newegg.ca
-
-				On utilise background-image pour faire beau */
-			}
-			/***********************************************************/
-			/***************** Style de plaçage d'affaires *************/
-			/***********************************************************/
-
-			h1 {
-				/* largeur de la balise */
-				width: 200px;
-				/* hauteur de la balise */
-				height: 200px;
-			}
-			/*WARNING normalement, on met tous les attributs de style dans la même balise*/
-			/* On est pas supposé avec deux sélecteurs section dans la css*/
-			section {
-				/*Margin*/
-				/*Border*/
-				/*padding*/
-				/*content*/
-
-				/*Ajoute une jolie bordure à ma balise*/
-				border: 
-				10px /* C'est la largeur de la bordure*/
-				solid /* C'est le type de bordure*/
-				#000; /*La couleur*/
-			}
-
-			/* Étoile c'est pour dire TOUT*/ 
-			/* Oprah : "YOU GET A BORDER!*/
-			* {
-				padding: 0;
-				margin: 0;
-			}
-
-
-		</style>
     </head>
     <body>
 		<header>
@@ -172,7 +46,7 @@
 			</section>
 			
 			<section>
-				<h3 style="color:orangered; border: 1px solid yellow">Just compare the following</h3>
+				<h3>Just compare the following</h3>
 				<table>
 					<tr>
 						<th colspan="2">
