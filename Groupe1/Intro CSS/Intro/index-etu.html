@@ -7,7 +7,7 @@
 			/*CSS C'est pour cascade style sheet.
 			En gros, c'est parce que le style coule
 			vers les balises enfant*/
-			/* Lac CSS prend une balise ou un selecteur
+			/* La CSS prend une balise ou un selecteur
 				Et on lui attribut des attributs
 				balise {
 					attribut : valeur;
@@ -16,7 +16,6 @@
 			/***********************************************************/
 			/**************** Style de changement de couleur ***********/
 			/***********************************************************/
-			/* Pour affecter un style à une liste de balise, on fait :*/
 			/* La virgule est importante! Ici on met le texte rose aux balises*/
 			/* h3 ET a ET li ET table */
 			h3, a, li, table {
@@ -27,13 +26,16 @@
 			body {
 				/* Pour changer la couleur de fond*/
 				/*Après le #, on met la valeur RGB en hexa*/
-				background-color: #0F0;
-				/*On peut aussi améliorer la précision en utilsant 48 bits*/
+				/*La valeur est toujours sur 24 bits.*/
 				background-color: #00FF00;
-				/*Ou utiliser le bon vieux rgb avec des chiffres*/
-				background-color: rgb(0, 255, 0);
+				/*Mais, quand on utlise trois paires de valeurs, on peut l'écrire raccourcis*/
+				/*Autre exemple #223344 => #234*/
+				background-color: #0F0;
 				/*Ou écrire lâchement le nom de la couleur*/
-				background-color: transparent;
+				background-color: green;
+				/*Ou utiliser le bon vieux rgb avec des chiffres,
+				et le a entre 0 et 1 pour la transparence*/
+				background-color: rgba(0, 255, 0, .5);
 
 				/***********************************************************************************/
 				/* Pour centre la page web*/
@@ -42,7 +44,7 @@
 				margin-right: 25%;
 				margin-left: 25%;
 
-				/*Deuxième façon pour centre sa page*/
+				/*Deuxième façon pour centrer sa page*/
 				width: 900px;
 				margin: auto;
 				/***********************************************************************************/
@@ -56,9 +58,9 @@
 				text-decoration: underline overline;
 				font-weight: bold;
 				font-style: italic;
+				text-align: center;
 				/* En HTML, on l'aurait fait comme ça...... Plus lourd un peu*/
 				/* <h2> <b><i><u>Where would you be without us ?</u></i></b> </h2> */
-				
 			}
 
 			/***********************************************************/
@@ -79,7 +81,7 @@
 				border-radius: 10px;
 			}
 			
-			table, tr, td, th {
+			table, td, th {
 				border: 1px solid black;
 			}
 		
@@ -172,7 +174,10 @@
 			</section>
 			
 			<section>
-				<h3 style="color:orangered; border: 1px solid yellow">Just compare the following</h3>
+				<h3 style="color:orangered;
+							border: 1px solid teal">
+					Just compare the following
+				</h3>
 				<table>
 					<tr>
 						<th colspan="2">

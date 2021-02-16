@@ -32,7 +32,7 @@
 
 				/*On peut l'écrire en hexadecimal abbrégé*/
 				/* On combine les paires de valeurs binaires identiques pour en faire qu'une*/
-				/*00 => 0*/
+				/*001122 => 012*/
 				background-color: #0F0;
 
 				/*On peut choisir sa couleur avec un mot*/
@@ -43,13 +43,13 @@
 
 				/*******************************************************************/
 				/*Comment centrer sa page web : deux façons*/
-				/*Avec margin auto, la largeur reste fixe à 900px*/
-				width: 900px;
-				margin: auto;
 				/*Avec des %, la largeur s'adapte à la largeur réelle du fureteur ou de l'écran*/
 				width: 50%;
 				margin-left: 25%;
 				margin-right: 25%;
+				/*Avec margin auto, la largeur reste fixe à 900px*/
+				width: 900px;
+				margin: auto;
 				/*******************************************************************/
 			}
 
@@ -97,6 +97,8 @@
 				font-weight: bold;
 				/*Ajoute une barre en haut et en bas*/
 				text-decoration: underline overline;
+				/*Aligner le texte au centre*/
+				text-align: center;
 			}
 
 			/***********************************************************/
@@ -123,7 +125,7 @@
 
 
 			/*avec la bordre, on peut faire comme border="1" dans la balise table*/
-			table, th, td, tr {
+			table, th, td {
 				border: solid 1px black;
 			}
 
@@ -163,7 +165,7 @@
 			</section>
 			
 			<section>
-				<h3>We are powerful</h3>
+				<h3 style="text-shadow: green 0 0 2px;">We are powerful</h3>
 				<p>
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 					Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.

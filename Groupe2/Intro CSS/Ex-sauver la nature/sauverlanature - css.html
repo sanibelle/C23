@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sauvons la nature</title>
+        <meta charset="utf-8" />
+		<style>
+			
+			@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: 'Amaranth', sans-serif;
+				width: 960px;
+				background-color: #008110;
+				margin: auto;
+			}
+			header {
+				background-image: url("images/nature.png");
+				background-size: cover;
+				height: 300px;
+			}
+			section {
+				/*Méhode 1 pour les noobs*/
+				padding: 10px;
+				padding-bottom: 125px;
+				/*Méhode 2*/
+				/*       haut droi bas  gauche*/
+				padding: 10px 10px 125px 10px;
+				/*Méhode 3*/
+				/*       haut g-d  bas*/
+				padding: 10px 10px 125px;
+
+				background-color: white;
+				height: 300px;
+				background-image: url("images/tree-green.png");
+				background-repeat: no-repeat;
+				/*On peut mettre les valeurs top, center, right, left, bottom*/
+				background-position:bottom right;
+			}
+		</style>
+    </head>
+    <body>
+        <div>
+			<header></header>
+			<section>
+				<h1>
+					Aidez-nous à protéger la planète
+				</h1>
+				<p style="margin: 20px 0;">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				</p>
+				<div style="text-align: center; font-weight: bold;">
+					<p style="margin-bottom: 20px; font-weight: bold;">Voulez-vous embarquer dans le projet ?</p>
+					<a href="oui.html"><img src="images/oui-green.png"></a>
+					<!-- Ça ici c'est le caractère html pour faire un espace. C'est une mauvais pratique, mais je dois vous le montrer ;) -->
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="non.html"><img src="images/non-green.png"></a>
+				</div>
+			</section>
+		</div>
+    </body>
+</html> 
