@@ -1,0 +1,128 @@
+/*
+Pourquoi sortir le style dans un fichier css
+1. Pour ne pas alourdir la page html avec des lignes de css
+2. Pour le réutiliser dans une autre page
+
+note : Normalement, le fichier global.css est importé par toutes les pages
+ET ensuite, chacune des pages ont un fichier css à eux, qui porte le même nom que la page.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 990px;
+    margin: auto;
+    font-family: 'Amaranth', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    /*vh c'est la hauteur de l'écran et le chiffre, c'est le %*/
+    /*vh pour view height*/
+    height: 100vh;
+}
+header {
+    color: white;
+    text-align: right;
+    background-image: url("../images/top-image.png");
+    background-position-x: left;
+    background-repeat: no-repeat;
+    /*contain rapetisse l'image pour qu'elle soit restreinte au contenu de la balise*/
+    /*l'image est contenue dans la balise*/
+    /*cover agrandi l'image pour qu'elle soit la plus grande possible (quitte à la perdre sous une autre balise)*/
+    /*l'image n'est pas contenue dans la balise, elle prend le plus d'espace possible en largeur ou hauteur*/
+    background-size: contain;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+main {
+    background-color: white;
+    padding: 10px;
+    /*em c'est le zoom relatif à la grosseur de la police du parent
+    si parent = 16px (c'est par défaut)
+    2em = 32px*/
+    font-size: 1.2em;
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+section {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px  black;
+    margin: 20px 0;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-position-x: right; est override par le style inline dans la balise section du milieu*/
+    background-position-x: right;
+}
+
+a {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+/*Un id c'est unique par page html*/
+#kid-groot {
+    background-image: url('../images/groot-kid.png');
+    padding-right: 160px;
+}
+/*Une classe on peut s'en servir à plusieurs endroits dans une page html*/
+
+.grey-text {
+    color: dimgrey;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#teen-groot {
+    background-position-x: left;
+    background-image: url('../images/groot-teen.png');
+    padding-left: 160px;
+}
+
+#adult-groot {
+    background-image: url('../images/groot-adult.png');
+    padding-right: 160px;
+}
+
+/*Les styles inline, block et inline block*/
+/*inline
+C'est, par exemple, la balise a. Elle se met de gauche à droite.
+Le display inline n'a pas de hauteur et de largeur
+*/
+
+/*cible directement le deux balises a à la fin de la page*/
+footer > a {
+    height: 50px;
+    display: block;
+}
+/*block
+Par exemple, la balise block. Se place un par dessus l'autre.
+Peut avoir une hauteur et largeur
+*/
+footer > p {
+    height: 100in;
+    display: inline;
+}
+
+/*inline block
+Place les éléments de gauche à droite, mais on peut y donner une hauteur
+*/
+
+footer > div {
+    display: inline-block;
+    height: 400px;
+    margin: 10px;
+    background-color: bisque;
+}
+

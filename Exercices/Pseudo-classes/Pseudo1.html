@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner un élément</title>
+    <style>
+        /*Le premier enfant*/
+        p:first-child{
+            color:red;
+        }
+        /*avant la classe. Extrêmement puissant. Ne pas l'utiliser dans ce cours*/
+        p:before, p:after{
+            content: "-";
+            background-color: aqua;
+        }
+        /*Oh! vient intéragir avec le content de before et after*/
+        p:first-letter {
+            color:pink;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            font-size: 1cm;
+        }
+        /***************Les liens****************/
+        /*Sera toujours bleu, visité ou pas*/
+        a {
+            color:royalblue;
+        }
+        /*Pas visité*/
+        a:link {
+            color:green;
+        }
+        /*Visité*/
+        a:visited {
+            color:red;
+        }
+        
+        /***- Hover et active -***/
+        
+        main:hover {
+            background-color: red;
+        }
+        main:active {
+            background-color: green;
+        }
+        /*Exercice : Avec du texte dans une balise P, essayez de faire la css pour qu'on pense que c'est une balise a*/
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Lien 1</a>
+        <a href="#">Lien 2</a>
+        <a href="#">Lien 3</a>
+    </header>
+    <main>
+        <p>Un</p>
+        <p>Deux</p>
+        <p>Trois</p>
+        <div>
+            <p>Quatre</p>
+            <p>Cinq</p>
+            <p>six</p>
+        </div>
+    </main>
+    <footer>
+        <p>Un Footer</p>
+        <p>Deux Footer</p>
+        <p>Trois Footer</p>
+    </footer>
+</body>
+</html>

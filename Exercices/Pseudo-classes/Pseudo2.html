@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner un élément</title>
+    <style>
+        /*Avec CSS3  on a aussi*/
+        /*:nth-child(1) == :first-child*/
+        li:nth-child(3) {
+            color:red
+        }
+        li:nth-child(even) {
+            background-color: blue;
+        }
+        li:nth-child(odd) {
+            background-color: red;
+        }
+        /*Le dernier, 2 serait l'avant dernier*/
+        li:nth-last-child(1) {
+            background-color: green;
+        }
+        /*On peut aussi metter hover!*/
+        li:nth-child(even):hover {
+            background-color: ghostwhite;
+        }
+        /*Exercice Faites une liste qui permet de changer de couleur quand on passe la souris dessus.
+        Chacune des rangés doit être d'une couleur différente*/
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </header>
+    <main>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </main>
+    <footer>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </footer>
+</body>
+</html>
