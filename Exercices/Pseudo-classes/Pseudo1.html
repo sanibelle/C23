@@ -10,11 +10,6 @@
         p:first-child{
             color:red;
         }
-        /*avant la classe. Extrêmement puissant. Ne pas l'utiliser dans ce cours*/
-        p:before, p:after{
-            content: "-";
-            background-color: aqua;
-        }
         /*Oh! vient intéragir avec le content de before et after*/
         p:first-letter {
             color:pink;
@@ -22,8 +17,14 @@
             font-weight: 900;
             font-size: 1cm;
         }
+        /*avant la classe. Extrêmement puissant. Ne pas l'utiliser dans ce cours*/
+        p:before, p:after{
+            content: "Allo ";
+            background-color: aqua;
+        }
         /***************Les liens****************/
         /*Sera toujours bleu, visité ou pas*/
+        /*À cause des pseudo classes en dessous, on ignore l'effet de a {}*/
         a {
             color:royalblue;
         }
@@ -35,7 +36,6 @@
         a:visited {
             color:red;
         }
-        
         /***- Hover et active -***/
         
         main:hover {
@@ -44,14 +44,19 @@
         main:active {
             background-color: green;
         }
-        /*Exercice : Avec du texte dans une balise P, essayez de faire la css pour qu'on pense que c'est une balise a*/
+        /*Exercice : Avec du texte dans une balise P, 
+        essayez de faire la css pour qu'on pense que c'est une balise a*/
     </style>
 </head>
+
 <body>
+    <pre>
+
+</pre>
     <header>
-        <a href="#">Lien 1</a>
-        <a href="#">Lien 2</a>
-        <a href="#">Lien 3</a>
+        <a href="#23">Lien 1</a>
+        <a href="#233">Lien 2</a>
+        <a href="#234">Lien 3</a>
     </header>
     <main>
         <p>Un</p>

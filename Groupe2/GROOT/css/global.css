@@ -1,0 +1,130 @@
+/*
+1. Avec un fichier CSS, on organise mieux notre site web
+2. Permet aussi de réutiliser le fichier css dans plusieurs page html
+
+En général, le fichier global.css est importé partout et chacune des pages
+ont un fichier css à leur nom.
+index.html va avoir index.css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 990px;
+    margin: auto;
+    /*1.2 fois la grosseur de la police du parent*/
+    font-size: 1.2em;
+    font-family: 'Amaranth', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    /*Correspond à 100% de la hauteur de l'écran du fureteur*/
+    height: 100vh;
+}
+header {
+    color:white;
+    text-align: right;
+    background-image: url("../images/top-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding-bottom: 150px;
+}
+main {
+    background-color: white;
+    padding: 10px;
+}  
+section {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    margin: 20px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+}
+footer {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    text-align: center;
+}
+li {
+    /*list-style ne coule pas*/
+    list-style: none;
+}
+a {
+    /*comme body est déjà à 1.2 em, ici on fait 16px*1.2*1.2 = 23.04px */
+    font-size: 1.2em;
+    color:blue;
+}
+
+.text-green {
+    color: green;
+}
+
+/*Un id c'est unique, il n'y en a qu'un par page*/
+#small-groot {
+    background-image: url('../images/groot-kid.png');
+    background-position-x: right;
+    padding-right: 160px;
+}
+
+.text-grey {
+    color:#666;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#teen-groot {
+    background-image: url('../images/groot-teen.png');
+    background-position-x: left;
+    padding-left: 160px;
+}
+
+
+#adult-groot {
+    background-image: url('../images/groot-adult.png');
+    background-position-x: right;
+    padding-right: 160px;
+}
+
+/* Block et Inline + Les accesseurs.....*/
+
+/*Accesseurs*/
+/*Toutes les balises p qui sont à l'intérieur de la balise footer*/
+footer p {
+    border-bottom: 2px dotted red;
+}
+
+/*Toutes les balises p qui sont DIRECTEMENT à l'intérieur de la balise footer*/
+/*Ce sont les enfants direct de footer, pas les petits enfants*/
+footer > p {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/*INLINE*/
+/*Les balises a sont de gauche à droite car elles sont display inline*/
+/*Elles se positionnent de gauche à droite, et n'ont pas de hauteur et de largeur*/
+footer p {
+    display: inline;
+    height: 1200in;
+}
+/*Block*/
+/*Les balises p sont de haut en bas car elles sont display block*/
+/*Elles se positionnent de haut en bas, et ont une hauteur une largeur*/
+footer > a {
+    display: block;
+    height: 1in;
+}
+/*Inline-Block*/
+/*Les balises inline-blcok sont de gauche à droite*/
+/*et ont une hauteur une largeur*/
+footer > div {
+    display: inline-block;
+    margin: 10px;
+    background-color: rgba(111, 222, 111, .5);
+    height: .5in;
+}
