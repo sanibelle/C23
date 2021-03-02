@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/global.css">
-    <!-- CSS only -->
     <title>CVM-Heaven : Le paradis à coût réduit!</title>
     <style>
         * {
@@ -16,7 +13,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        header {
+        header, footer {
             background-image: url("images/texture.png");
             text-align: center;
         }
@@ -24,81 +21,65 @@
             color: white;
             text-decoration: none;
         }
-        header nav a {
+        header a {
             padding: 40px;
-            /*inline pour mettre les liens de gauche à droite*/
-            /*block, pour avoir une hauteur, juste inline n'aurait pas eu de hauteur*/
             display: inline-block;
         }
-        #section-nuages {
-            background-repeat: no-repeat;
-            background-position: center;
+        #plan-info {
             background-color: #2ea0df;
             background-image: url("images/clouds.jpg");
-            background-size: cover;
+            height: 620px;
+            text-align: center;
             color: white;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        #plan-info h1{
+            padding: 200px 0 150px;
+        }
+        #plan-selection {
             text-align: center;
-            height: 500px;
         }
-        /*toutes les balises (c'est le *), dans la balise qui a comme id section-nuage*/
-        #section-nuages * {
-            padding-top: 100px;
-        }
-        #section-plan {
-            text-align: center;
-        }
+
         .card {
-            /*Pour l'examen, on va s'en servir
-            aligne le texte dans le div avec la première ligne*/
+            /*Avec display inline block, on vient aligner le texte avec la ligne du haut.*/
             vertical-align: top;
-            border: black solid 1px;
             display: inline-block;
+            width: 200px;
+            border: 1px solid black;
             padding: 10px;
             margin: 10px;
-            width: 200px;
             text-align: left;
-            height: 300px;
         }
         .card h3 {
             color: #2ea0df;
             padding-bottom: 10px;
         }
-        .card p {
+        .plan-description {
             padding-top: 10px;
-        }
-        .plan-price {
-            height: 180px;
+            height: 200px;
         }
         .button {
             background-color: #2ea0df;
             text-align: center;
             color: white;
             padding: 10px;
+            font-size: 1.8em;
         }
         .button:hover {
-            background-color: salmon;
-        }
-        footer {
-            background-image: url("images/texture.png");
-            text-align: center;
-            height: 20%;
+            background-color: red;
         }
         footer div {
             display: inline-block;
             color: white;
+            margin: 10px 50px 10%;
             text-align: left;
-            margin: 20px 60px;
-        }
-        footer h5 {
-            padding-bottom: 10px;
-            font-size: 1.1em;
         }
         footer li {
-            /*Permet de mettre les éléments de la liste alignés à gauche sur le titre h5
-            Les puces seront donc incluses dans la largeur du texte*/
-            list-style-position: inside;
+            list-style: inside;
         }
-        </style>
+    </style>
 </head>
 <body>
     <header>
@@ -110,46 +91,44 @@
         </nav>
     </header>
     <main>
-        <section id="section-nuages">
+        <section id="plan-info">
             <h1>
                 Le paradis, à coût réduit!
             </h1>
-            <p>
+            <h4>
                 Choisissez votre forfait dès maintenant. Accédez-y à votre mort!
-            </p>
+            </h4>
         </section>
-        <section id="section-plan">
+        <section  id="plan-selection">
             <div class="card">
                 <h3>Base</h3>
                 <p><b>30$/mois</b></p>
-                <p class="plan-price">Accès à un nuage privé.</p>
-                <p class="button">Choisir</p>
+                <p class="plan-description">Accès à un nuage privé.</p>
+                <div class="button">Choisir</div>
             </div>
             <div class="card">
                 <h3>Standard</h3>
                 <p><b>50$/mois</b></p>
-                <p class="plan-price">Accès à un nuage privé et possibilité de visiter les autres nuages.</p>
-                <p class="button">Choisir</p>
+                <p class="plan-description">Accès à un nuage privé et possibilité de visiter les autres nuages.</p>
+                <div class="button">Choisir</div>
             </div>
             <div class="card">
                 <h3>Luxe</h3>
                 <p><b>100$/mois</b></p>
-                <p class="plan-price">Accès à votre nuage et possibilité de contrôler la météo.</p>
-                <p class="button">Choisir</p>
+                <p class="plan-description">Accès à votre nuage et possibilité de contrôler la météo.</p>
+                <div class="button">Choisir</div>
             </div>
             <div class="card">
                 <h3>La renaissance</h3>
                 <p><b>500$/mois</b></p>
-                <p class="plan-price">Vous vous réincarnez en la personne de votre choix!</p>
-                <p class="button">Choisir</p>
+                <p class="plan-description">Vous vous réincarnez en la personne de votre choix!</p>
+                <div class="button">Choisir</div>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <h5>
-                Informations techniques
-            </h5>
+            <h5>Informations techniques</h5>
             <ul>
                 <li><a href="#">Comment est-ce possible?</a></li>
                 <li><a href="#">L'état des serveurs</a></li>
@@ -158,9 +137,7 @@
             </ul>
         </div>
         <div>
-            <h5>
-                Les plans spéciaux
-            </h5>
+            <h5>Les plans spéciaux</h5>
             <ul>
                 <li><a href="#">L'enfer</a></li>
                 <li><a href="#">La splendeur de Rome</a></li>
@@ -169,9 +146,7 @@
             </ul>
         </div>
         <div>
-            <h5>
-                Autres informations
-            </h5>
+            <h5>Autres informations</h5>
             <ul>
                 <li><a href="#">Compagnie</a></li>
                 <li><a href="#">Légalité</a></li>
@@ -182,3 +157,19 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

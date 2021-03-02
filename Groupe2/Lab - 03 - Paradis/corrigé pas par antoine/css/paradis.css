@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-image: url('../images/texture.png');
+	padding: 40px 0;
+	text-align: center;
+}
+
+header ul li {
+	display: inline-block;
+	width: 150px;
+}
+
+header a {
+	/* enleve le soulignement des liens */
+	text-decoration: none;
+	font-size: 1.2em;
+	color: white;
+}
+
+.banner-section {
+	height: 500px;
+	background-color: #2ea0df;
+	background-image: url('../images/clouds.jpg');
+	background-position: center; 
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+}
+
+.banner-section h1 {
+	font-size: 2.8em;
+	padding-top: 150px;
+}
+
+.banner-section h3 {
+	font-size: 1.4em;
+	padding-top: 100px;
+}
+
+.plans-section {
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/*au lieu de faire une liste de h4 et p*/
+.plans-section div * {
+	text-align: left;
+}
+
+.plan {
+	display: inline-block;	
+	border: 1px solid #666;
+	width: 200px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.plan h4 {
+	font-size: 1.5em;
+}
+
+.plan .price {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.plan .details {
+	height: 160px;
+}
+
+.plan .btn {
+	background-color: #2ea0df;
+	text-align: center;
+	padding: 10px;
+}
+
+.plan .btn a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.8em;
+}
+
+footer {
+	background-image: url('../images/texture.png');
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+footer div * {
+	text-align: left;
+}
+
+.footer-info {
+	display: inline-block;
+	margin: 20px 50px;
+}
+
+footer ul {
+	list-style-position: inside;
+	width: 225px;
+}
+
+footer h5 {
+	margin-bottom: 10px;
+}
