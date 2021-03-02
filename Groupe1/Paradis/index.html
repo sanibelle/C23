@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <title>CVM-Heaven : Le paradis à coût réduit!</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-image: url("images/texture.png");
+            text-align: center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        header nav a {
+            padding: 40px;
+            /*inline pour mettre les liens de gauche à droite*/
+            /*block, pour avoir une hauteur, juste inline n'aurait pas eu de hauteur*/
+            display: inline-block;
+        }
+        #section-nuages {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #2ea0df;
+            background-image: url("images/clouds.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            height: 500px;
+        }
+        /*toutes les balises (c'est le *), dans la balise qui a comme id section-nuage*/
+        #section-nuages * {
+            padding-top: 100px;
+        }
+        #section-plan {
+            text-align: center;
+        }
+        .card {
+            /*Pour l'examen, on va s'en servir
+            aligne le texte dans le div avec la première ligne*/
+            vertical-align: top;
+            border: black solid 1px;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: left;
+            height: 300px;
+        }
+        .card h3 {
+            color: #2ea0df;
+            padding-bottom: 10px;
+        }
+        .card p {
+            padding-top: 10px;
+        }
+        .plan-price {
+            height: 180px;
+        }
+        .button {
+            background-color: #2ea0df;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        .button:hover {
+            background-color: salmon;
+        }
+        footer {
+            background-image: url("images/texture.png");
+            text-align: center;
+            height: 20%;
+        }
+        footer div {
+            display: inline-block;
+            color: white;
+            text-align: left;
+            margin: 20px 60px;
+        }
+        footer h5 {
+            padding-bottom: 10px;
+            font-size: 1.1em;
+        }
+        footer li {
+            /*Permet de mettre les éléments de la liste alignés à gauche sur le titre h5
+            Les puces seront donc incluses dans la largeur du texte*/
+            list-style-position: inside;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Les plans</a>
+            <a href="#">Nos clients</a>
+            <a href="#">Contactez-nous</a>
+        </nav>
+    </header>
+    <main>
+        <section id="section-nuages">
+            <h1>
+                Le paradis, à coût réduit!
+            </h1>
+            <p>
+                Choisissez votre forfait dès maintenant. Accédez-y à votre mort!
+            </p>
+        </section>
+        <section id="section-plan">
+            <div class="card">
+                <h3>Base</h3>
+                <p><b>30$/mois</b></p>
+                <p class="plan-price">Accès à un nuage privé.</p>
+                <p class="button">Choisir</p>
+            </div>
+            <div class="card">
+                <h3>Standard</h3>
+                <p><b>50$/mois</b></p>
+                <p class="plan-price">Accès à un nuage privé et possibilité de visiter les autres nuages.</p>
+                <p class="button">Choisir</p>
+            </div>
+            <div class="card">
+                <h3>Luxe</h3>
+                <p><b>100$/mois</b></p>
+                <p class="plan-price">Accès à votre nuage et possibilité de contrôler la météo.</p>
+                <p class="button">Choisir</p>
+            </div>
+            <div class="card">
+                <h3>La renaissance</h3>
+                <p><b>500$/mois</b></p>
+                <p class="plan-price">Vous vous réincarnez en la personne de votre choix!</p>
+                <p class="button">Choisir</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h5>
+                Informations techniques
+            </h5>
+            <ul>
+                <li><a href="#">Comment est-ce possible?</a></li>
+                <li><a href="#">L'état des serveurs</a></li>
+                <li><a href="#">Soutien technique</a></li>
+                <li><a href="#">Version actuelle</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>
+                Les plans spéciaux
+            </h5>
+            <ul>
+                <li><a href="#">L'enfer</a></li>
+                <li><a href="#">La splendeur de Rome</a></li>
+                <li><a href="#">La matrice</a></li>
+                <li><a href="#">La guerre des étoiles</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>
+                Autres informations
+            </h5>
+            <ul>
+                <li><a href="#">Compagnie</a></li>
+                <li><a href="#">Légalité</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
