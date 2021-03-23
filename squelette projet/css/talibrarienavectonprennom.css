@@ -1,0 +1,11 @@
+.text-woaw {
+    text-shadow: 20px 20px 20px purple;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size :200px;
+}
