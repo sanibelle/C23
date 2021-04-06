@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-attachment:fixed; 
+            background-image: url(img/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 900px;
+            margin: auto;
+        }
+        nav {
+            border-radius: 10px;
+        }
+        .carre {
+            width: 25px;
+            height: 25px;
+            background-color: brown;
+        }
+        .carre1 {
+            border-radius: 55px 0  0  0;
+        }
+        .carre2 {
+            border-radius: 0 55px 0  0;
+        }
+        .carre3 {
+            border-radius: 0  0 55px 0;
+        }
+        .carre4 {
+            border-radius: 0  0  0 55px;
+        }
+        nav ul {
+            background-color: beige;
+        }
+        #spacer {
+            height: 10px;
+        }
+        main p {
+            padding: 100px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 5%;
+            font-size: 3em;
+        }
+        nav li {
+            display: inline-block;
+            list-style: none;
+            padding: 20px 20px;
+        }
+        nav {
+            text-align: center;
+
+        }
+        footer {
+            background-image: url(img/cat.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 200px;
+        }
+        #messages {
+            width: 400px;
+            overflow-y: auto;
+        }
+        .message {
+            padding: 100px;
+            margin: 10px;
+            text-align: center;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="messages">
+        <div class="message">Message alert!</div>
+    </div>
+    <header>
+        <h1>
+            Exemple Position
+        </h1>
+    </header>
+    <nav>
+        <div id="spacer"></div>
+        <div class="carre carre1"></div>
+        <div class="carre carre2"></div>
+        <div class="carre carre3"></div>
+        <div class="carre carre4"></div>
+        <ul>
+            <li><a href="#">Premier lien</a></li>
+            <li><a href="#">Deuxieme lien</a></li>
+            <li><a href="#">Troisieme lien</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, necessitatibus aliquid ratione eius vitae veritatis nemo expedita accusantium a, sunt minus repudiandae, voluptatum molestias distinctio dolor autem enim dignissimos!
+        </p>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+<script>
+    document.addEventListener("click", function() {
+        document.getElementById("messages").innerHTML += `<div class="message">Message alert!</div>`
+        console.debug('allo')
+    });
+</script>
+</html>
