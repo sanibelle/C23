@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 1.0em;
+}
+
+.game {
+    background-image: url('../images/board.png');
+    width:320px;
+    height:320px;
+    margin:40px auto;
+}
+
+.game div {
+    color:green;
+}
+
+.x1 {
+
+}
+
+.o1 {
+
+}
+
+.x2 {
+
+}
+
+.o2 {
+
+}

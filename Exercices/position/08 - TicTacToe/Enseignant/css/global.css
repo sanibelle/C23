@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 1.0em;
+}
+
+.game {
+    background-image: url('../images/board.png');
+    width:320px;
+    height:320px;
+    margin:40px auto;
+    position: relative;
+}
+
+.game div {
+    position: absolute;
+    width:60px;
+    height:60px;
+    text-align: center;
+    color:green;
+}
+
+.x1 {
+   left:20px;
+   top:20px;
+}
+
+.o1 {
+    right:20px;
+    top:20px;
+}
+
+.x2 {
+    bottom:20px;
+    left:20px;
+}
+
+.o2 {
+    left:50%;
+    top:50%;
+    margin-left:-30px;
+    margin-top:-30px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Il y a 5 positions! 
+        Static : C'est ça par défaut, suit le flot normal des éléments
+        fixed : Vient déplacer l'élément en se fixant sur les valeurs (top, bottom, left, right)à
+                En se positionnant de façon relative à la page
+                Très utile pour les gros vidéo qui cachent 40% de ton écran de cellulaire quand tu scroll down: . . .
+                    top 0px; bottom 50%; left 0; right: 0;
+        relative : Déplace en fonction de sa position normale danms le flot des balises.
+        absolute : C'est comme fixed, qui se positionne en rapport à la balise html
+                    MAIS EN PLUSSSSSSSE
+                    Se place en fonction du parent qui a une position: relative ou fixed ou sticky.
+        sticky
+
+        et 5 éléments qui peuvent influencer la position
+        top, bottom, left, right, z-index
+        */
+        .parent-element {
+            margin-top: 100px;
+            position: relative;
+            border: 1px solid grey;
+            background-color: limegreen;
+        }
+        .sibling-element {
+            border: 1px solid blueviolet;
+            background-color: salmon;
+        }
+        .main-element {
+            position: absolute;
+            /*Je suis décalé vers le bas de 20px par apport à ma position normale*/
+            right: 10px;
+            top: 10px;
+            padding: 10px;
+            border: solid 1px red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-element">
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="main-element">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+    </div>
+</body>
+</html>

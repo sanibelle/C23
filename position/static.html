@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Il y a 5 positions! 
+        Static : C'est ça par défaut, suit le flot normal des éléments
+                top, bottom, left, right, z-index n'ont aucun effet sur la balise
+        relative: 
+        absolute
+        fixed
+        sticky
+
+        et 5 éléments qui peuvent influencer la position
+        top, bottom, left, right, z-index
+        */
+        .parent-element {
+            border: 1px solid grey;
+            background-color: limegreen;
+        }
+        .sibling-element {
+            border: 1px solid blueviolet;
+            background-color: salmon;
+        }
+        .main-element {
+            position: static;
+            left: 10px;
+            bottom: 10px;
+            padding: 10px;
+            border: solid 1px red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-element">
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="main-element">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+    </div>
+</body>
+</html>

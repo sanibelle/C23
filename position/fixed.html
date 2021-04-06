@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Il y a 5 positions! 
+        Static : C'est ça par défaut, suit le flot normal des éléments
+        fixed : Vient déplacer l'élément en se fixant sur les valeurs (top, bottom, left, right)à
+                En se positionnant de façon relative à la page
+                Très utile pour les gros vidéo qui cachent 40% de ton écran de cellulaire quand tu scroll down: . . .
+                    top 0px; bottom 50%; left 0; right: 0;
+        relative
+        absolute
+        sticky
+
+        et 5 éléments qui peuvent influencer la position
+        top, bottom, left, right, z-index
+        */
+        .parent-element {
+            border: 1px solid grey;
+            background-color: limegreen;
+        }
+        .sibling-element {
+            border: 1px solid blueviolet;
+            background-color: salmon;
+        }
+        .main-element {
+            position: fixed;
+            right: 200px;
+            left: 200px;
+            top: 200px;
+            bottom: 200px;
+            /*
+                width: 100%;
+                On peut aussi changer la largeur et la hauteur, mais 
+                on va préférer utiliser top et etc.. pour le faire.
+            */
+            padding: 10px;
+            border: solid 1px red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-element">
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="main-element">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+    </div>
+</body>
+</html>
