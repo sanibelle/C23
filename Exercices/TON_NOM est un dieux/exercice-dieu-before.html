@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Document</title>
+  <style>
+    body {
+      width: 900px;
+      margin: auto;
+      font-size: 100px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      div::before {
+        content: "Antoine";
+        font-size: 100px;
+      }
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1199px) {
+      div::before {
+        content: "est";
+        font-size: 100px;
+      }
+    }
+    @media screen and (min-width: 800px) and (max-width: 999px) {
+      div::before {
+        content: "un";
+        font-size: 100px;
+      }
+    }
+    @media screen and (min-width: 600px) and (max-width: 799px) {
+      div::before {
+        content: "dieu";
+        font-size: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
