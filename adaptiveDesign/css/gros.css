@@ -1,0 +1,8 @@
+div::before {
+  content: 'GROS';
+  color: rgb(0, 0, 0);
+  font-size: 200px;
+}
+div {
+  background-color: red;
+}

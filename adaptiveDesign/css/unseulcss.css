@@ -1,0 +1,37 @@
+body {
+  width: 900px;
+  margin: auto;
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  div::before {
+    content: 'petit';
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+  }
+  div {
+    background-color: brown;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  div::before {
+    content: 'moyen';
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+  }
+  div {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  div::before {
+    content: 'GROS';
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+  }
+  div {
+    background-color: red;
+  }
+}
