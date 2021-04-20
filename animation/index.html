@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+/* https://www.w3schools.com/css/css3_animations.asp */
+    /*En premier, on déclare nos variables dans root.*/
+  :root {
+    --primary-color: salmon;
+    --secondary-color: lawngreen;
+  }
+  
+  @keyframes le-nom-de-lanimation {
+    from {
+      background-color: var(--secondary-color);  
+    }
+    to {
+      background-color: var(--primary-color);
+    }
+  }
+
+  @keyframes toei-animation {
+    0% {
+      background-color: var(--secondary-color);  
+      font-size: 100px;
+    }
+    
+    50% {
+      background-color: var(--primary-color);
+      font-size: 200px;
+    }
+
+    100%{
+      background-color: var(--secondary-color);  
+      font-size: 1em;
+    }
+  }
+
+  header {
+    animation: le-nom-de-lanimation 4s ease-in;
+    /*Garde l'aspect du dernier frame de l'animation*/
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  main {
+    animation: toei-animation 2s ease-out;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    transition: all 0.5s ease-out;
+  }
+
+  footer:hover {
+    background-color: var(--primary-color);
+  }
+  
+  </style>
+</head>
+<body>
+  <header><h1>Bonjour</h1></header>
+  <main>
+    <h2>Salut</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia odit, ipsam aliquam veniam optio doloribus sequi, nihil quisquam at quis illo error vero autem asperiores totam laudantium. Ipsa, harum.</p>
+  </main>
+  <footer>Bye</footer>
+</body>
+</html>

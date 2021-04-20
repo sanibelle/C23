@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*En premier, on déclare nos variables dans root.*/
+    :root {
+      --primary-color: #1e90ff;
+      --secondary-color: #fff;
+      --header-text-size: 1.1em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      :root {
+        /* --secondary-color: red; */
+      }
+    }
+
+    body {
+      background-color: var(--primary-color);
+    }
+
+    header {
+      /* On peut redéfinir une variable pour l'instant d'un sélecteur CSS */
+      /* --secondary-color: #666; */
+      background-color: var(--secondary-color); 
+      font-size: var(--header-text-size);
+    }
+    footer {
+      background-color: var(--secondary-color); 
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Bonjour</h1></header>
+  <main>
+    <h2>Salut</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia odit, ipsam aliquam veniam optio doloribus sequi, nihil quisquam at quis illo error vero autem asperiores totam laudantium. Ipsa, harum.</p>
+  </main>
+  <footer>Bye</footer>
+</body>
+</html>
